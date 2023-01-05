@@ -1,0 +1,219 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
+}
+
+body {
+    background-color: rgb(239, 239, 239);
+    color: #131519;
+    padding: 5rem;
+    width: 100%;
+}
+
+h1 {    
+    display: block;
+    width: 100%;
+    font-size: 4rem;
+    padding: 3rem;
+    color: green;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 4px rgba(21, 73, 60, 0.75);
+    margin-bottom: 1rem;
+	font-weight: 500;
+	font-family: 'Inter', sans-serif;
+    background-image: url("/src/images/OIP.jpg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #fff;
+}
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+h2 {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(114, 114, 114);
+}
+
+.todoApp input[type="text"] {
+    display: flex;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem;
+    color: #131519;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border-style:solid;
+    border-color: #d3d3d3;
+    border-width: 2px;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+#date {
+    width: 28%;
+    font-size: 1.125rem;
+    color: var(--grey);
+    background-color: white;
+    border-radius: 00.4rem;
+    padding: 1rem;
+    border-style: solid;
+    border-color: #d3d3d3;
+}  
+
+.todoApp input[type="submit"] {
+    width: 70%;
+    float: right;
+    font-size: 1.125rem;
+    padding: 1rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: green;
+    box-shadow: 0px 0px 4px rgba(21, 73, 60, 0.75);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.todoApp input[type="submit"]:hover {
+    opacity: 0.75;
+}
+
+.checkthrough {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    border: 2px solid green;
+}
+
+.checkthrough::after {
+    content: '';
+    display: block;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    background-color: green; 
+    border-radius: 999px;
+    transition: 0.2s ease-in-out;
+}
+
+input:checked ~ .checkthrough::after {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+.todoList .list {
+    margin: 1rem 0;
+}
+
+.todoList .todo-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 4px rgba(21, 73, 60, 0.75);
+    margin-bottom: 1rem;
+}
+
+.todo-item label {
+    display: block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.todo-item .todo-content {
+    flex: 1 1 0%;
+}
+
+.todo-item .todo-date {
+    color: green;
+    flex: 1 1 0%;
+}
+
+.todo-item .todo-content input {
+    color: #131519;
+    font-size: 1.125rem;
+}
+
+.todo-item .actions {
+    display: flex;
+    align-items: center;
+}
+
+.todo-item .actions button {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.todo-item .actions button:hover {
+    opacity: 0.75;
+}
+
+.todo-item .actions .edit {
+    margin-right: 0.5rem;
+    background-color: green;
+}
+
+.todo-item .actions .delete {
+    background-color: green;
+    opacity: 0.75;
+}
+
+.todo-item.done .todo-content input {
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
+#alphabetically {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: green;
+    box-shadow: 0px 0px 4px rgba(21, 73, 60, 0.75);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+
+
+
