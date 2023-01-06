@@ -86,7 +86,7 @@ input[type="checkbox"] {
 }  
 
 .todoApp input[type="submit"] {
-    width: 70%;
+    width: 100%;
     float: right;
     font-size: 1.125rem;
     padding: 1rem;
