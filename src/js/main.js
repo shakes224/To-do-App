@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    todos = JSON.parse(localStorage.getItem('todos')) || []; //to exchange the data to and from the server. When receiving data from the web the data will always be a string
+    todos = JSON.parse(localStorage.getItem('todos')) || []; 
     const newTodoForm = document.querySelector('#new-form'); 
 
 
