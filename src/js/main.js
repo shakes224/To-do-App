@@ -9,7 +9,6 @@ window.addEventListener('load', () => {
         const todo = {
             content: e.target.elements.content.value,
             done: false,
-            createdAt: new Date().getTime()
         }
 
         todos.push(todo);
@@ -38,22 +37,20 @@ function displayTaskElement() { //function is called displayTaskElement
         const input = document.createElement('input');
         const span = document.createElement('span');
         const content = document.createElement('div');
-        const date = document.createElement('div');
         const actions = document.createElement('div');
         const edit = document.createElement('button');
         const deleteButton = document.createElement('button');
 
         input.type = 'checkbox'; //This is for the checkbox next to each list item
         input.checked = todo.done; //This is the action where the circle is done or not
-        span.classList.add('checkthrough'); //This is when you checked the checkbox the strike goes through the list item
+        span.classList.add('checkthrough'); 
         
-        date.classList.add('todo-date');
+
         content.classList.add('todo-content');
         actions.classList.add('actions');
         edit.classList.add('edit');
         deleteButton.classList.add('delete');
 
-        date.innerHTML = `<input type="date" value="${todo.date}" readonly>`;
         content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
         edit.innerHTML = "Edit";
         deleteButton.innerHTML = "Delete";
@@ -64,13 +61,12 @@ function displayTaskElement() { //function is called displayTaskElement
         actions.appendChild(deleteButton);
         todoItem.appendChild(label);
         todoItem.appendChild(content);
-        todoItem.appendChild(date);
         todoItem.appendChild(actions);
 
         todoList.appendChild(todoItem);
 
         if (todo.done) {
-            todoItem.classList.add('done'); //this is the part where you loop through if something is done
+            todoItem.classList.add('done'); 
         }
 
         input.addEventListener('change', (e) => {
