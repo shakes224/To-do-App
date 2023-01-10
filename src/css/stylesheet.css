@@ -77,7 +77,7 @@ input[type="checkbox"] {
 #date {
     width: 28%;
     font-size: 1.125rem;
-    color: var(--grey);
+    color: grey;
     background-color: white;
     border-radius: 00.4rem;
     padding: 1rem;
@@ -199,7 +199,8 @@ input:checked ~ .checkthrough::after {
 }
 
 #alphabetically {
-    width: 100%;
+    box-sizing: border-box;
+    width: 99%;
     font-size: 1rem;
     padding: 0.5rem;
     color: #fff;

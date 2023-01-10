@@ -52,7 +52,7 @@ function displayTaskElement() { //function is called displayTaskElement
         deleteButton.classList.add('delete');
 
         content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
-        edit.innerHTML = "Edit";
+        edit.innerHTML = "edit";
         deleteButton.innerHTML = "Delete";
 
         label.appendChild(input);
